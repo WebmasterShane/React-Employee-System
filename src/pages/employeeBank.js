@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import API from "../utils/API";
-import CardContainer from "../components/Wrapper/index";
+import CardContainer from "../components/CardContainer/index";
 import Row from "../components/Row";
 import EmployeeContext from "../utils/EmployeeContext"
 
@@ -21,35 +21,35 @@ function Employees() {
     loadUsers();
   }, []);
 
-  function nextUser(userIndex) {
-    // Ensure that the user index stays within our range of users
-    if (userIndex >= users.length) {
-      userIndex = 0;
-    }
-    setUser(users[userIndex]);
-    setUserIndex(userIndex);
-  }
+  // function nextUser(userIndex) {
+  //   // Ensure that the user index stays within our range of users
+  //   if (userIndex >= users.length) {
+  //     userIndex = 0;
+  //   }
+  //   setUser(users[userIndex]);
+  //   setUserIndex(userIndex);
+  // }
 
-  function previousUser(userIndex) {
-    // Ensure that the user index stays within our range of users
-    if (userIndex < 0) {
-      userIndex = users.length - 1;
-    }
-    setUser(users[userIndex]);
-    setUserIndex(userIndex);
-  }
+  // function previousUser(userIndex) {
+  //   // Ensure that the user index stays within our range of users
+  //   if (userIndex < 0) {
+  //     userIndex = users.length - 1;
+  //   }
+  //   setUser(users[userIndex]);
+  //   setUserIndex(userIndex);
+  // }
 
-  function handleBtnClick(event) {
-    // Get the title of the clicked button
-    const btnName = event.target.getAttribute("data-value");
-    if (btnName === "next") {
-      const newUserIndex = userIndex + 1;
-      nextUser(newUserIndex);
-    } else {
-      const newUserIndex = userIndex - 1;
-      previousUser(newUserIndex);
-    }
-  }
+  // function handleBtnClick(event) {
+  //   // Get the title of the clicked button
+  //   const btnName = event.target.getAttribute("data-value");
+  //   if (btnName === "next") {
+  //     const newUserIndex = userIndex + 1;
+  //     nextUser(newUserIndex);
+  //   } else {
+  //     const newUserIndex = userIndex - 1;
+  //     previousUser(newUserIndex);
+  //   }
+  // }
 
   function loadUsers() {
         API.getUsers().then(users => {
@@ -70,15 +70,15 @@ function Employees() {
   }
 
   return (
-    <EmployeeContext.Provider value={{user, users, handleBtnClick }}>
+    <EmployeeContext.Provider value={{user, users}}>
     <div>
       <h1 className="text-center">Shanes Employee Tracker</h1>
       <h3 className="text-center">Wait for more info</h3>
-      <Row>
+  
         <CardContainer
        
         />
-      </Row>
+
     </div>
     </EmployeeContext.Provider>
   );
