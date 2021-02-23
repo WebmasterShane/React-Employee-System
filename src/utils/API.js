@@ -6,7 +6,7 @@ export default {
   getUsers: function(userData) {
     return new Promise((resolve, reject) => {
       axios
-        .get("https://randomuser.me/api?results=30")
+        .get("https://randomuser.me/api?results=10")
         .then(res => {
           const users = res.data;
           console.log(users)
