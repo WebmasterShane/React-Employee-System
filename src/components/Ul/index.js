@@ -2,7 +2,7 @@ import React, {useContext} from "react";
 import Container from "../CardContainer/index";
 import EmployeeContext from "../../utils/EmployeeContext"
 import "./style.css";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import TableData from "../tableData"
 
 
@@ -13,9 +13,9 @@ function Ulfunction() {
 
   const {nameF, nameL, image, email, GHusername } = employees
   return (
-    <div className="card-container">
-      <table>
-        <tbody>
+    <div className="container">
+      <table className="table table-dark">
+       <tbody>
         <TableData
         
         

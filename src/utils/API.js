@@ -1,9 +1,10 @@
 import axios from "axios";
 
-const userData = ["JavaScript", "Python", "C", "Ruby", "Java", "PHP", "C#"];
+const userData = ["this is a test"];
 // Export an object containing methods we'll use for accessing the random user API
 export default {
-  getUsers: function(userData) {
+  getUsers: function() {
+    console.log(userData)
     return new Promise((resolve, reject) => {
       axios
         .get("https://randomuser.me/api?results=10")
@@ -17,7 +18,7 @@ export default {
             return {
               nameF: user.name.first,
               nameL: user.name.last,
-              image: user.picture.thumbnail,
+              image: user.picture.medium,
               email: user.email,
               GHusername: user.login.username
 

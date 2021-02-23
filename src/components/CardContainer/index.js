@@ -10,13 +10,8 @@ function CardContainer() {
   
 
   return (
-    <div className="jumbotron card-container">
- 
-  
-      <Ul
-      
-
-      />
+    <div>  
+      <Ul/>
     </div>
   );
 }

@@ -5,7 +5,6 @@ td{
   border-radius: 2px;
   border-color: black;
 }
-.td{
-  border-radius: 2px;
-  border-color: black
+.column{
+  width: 25%;
 }
