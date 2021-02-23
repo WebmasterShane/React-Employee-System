@@ -4,6 +4,7 @@
 }
 .column{
   width: 25%;
+  align-content: center;
 }
 
 .thumbNailImage{

@@ -28,15 +28,25 @@ function TableData() {
 
   return (
     <div className="employees">
-      {employees.map((employees, index) =>(
-        <div key={index}>
-          <tr>
-          <td className="col-md-3 column"><img className="thumbNailImage" src={employees.image} alt="user thumbnail" /></td>
-            <td className="col-md-3 column">{employees.nameF +" "+ employees.nameL}</td>
-            <td className="col-md-3">{employees.email}</td>
-            <td className="col-md-3">{employees.GHusername}</td>
+      <thead>
+          <tr className="tableRow">
+          <td className="column"></td>
+            <td className="column text-left"><h3>Name</h3></td>
+            <td className="column text-left"><h3>Email</h3></td>
+            <td className="column text-left"><h3>GitHub Username</h3></td>
+            <td className="column text-left"><h3>Phone Number</h3></td>
           </tr>
-        </div>
+          </thead>
+      {employees.map((employees, index) =>(
+        
+          <tr key={index} className="tableRow">
+          <td className="col-3 column thumbNailImage "><img className="thumbNailImage" src={employees.image} alt="user thumbnail" /></td>
+            <td className="column text-left">{employees.nameF +" "+ employees.nameL}</td>
+            <td className="column text-left">{employees.email}</td>
+            <td className="column text-left">{employees.GHusername}</td>
+            <td className="column text-left">{employees.phone}</td>
+          </tr>
+  
       ))}
 
     </div>

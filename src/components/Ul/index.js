@@ -14,7 +14,7 @@ function Ulfunction() {
   const {nameF, nameL, image, email, GHusername } = employees
   return (
     <div className="container">
-      <table className="table table-dark">
+      <table className="table table-striped table-dark table-hover">
        <tbody>
         <TableData
         

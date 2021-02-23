@@ -10,7 +10,8 @@ function Employees() {
     nameL: "",
     image: "",
     email: "",
-    GHusername: ""
+    GHusername: "",
+    phone: ""
   });
   const [user, setUser] = useState();
   const [users, setUsers] = useState([]);
@@ -31,7 +32,8 @@ function Employees() {
             name: users.nameF + users.nameL,
             image: users.image,
             email: users.email,
-            GHusername: users.GHusername
+            GHusername: users.GHusername,
+            phone: users.phone
 
           });
           
@@ -48,7 +50,7 @@ function Employees() {
       <h3 className="text-center">Wait for more info</h3>
   
         <CardContainer
-        employees={users}
+        
        
         />
 

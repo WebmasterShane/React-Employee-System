@@ -7,7 +7,7 @@ export default {
     console.log(userData)
     return new Promise((resolve, reject) => {
       axios
-        .get("https://randomuser.me/api?results=10")
+        .get("https://randomuser.me/api?results=30")
         .then(res => {
           const users = res.data;
           console.log(users)
@@ -20,7 +20,8 @@ export default {
               nameL: user.name.last,
               image: user.picture.medium,
               email: user.email,
-              GHusername: user.login.username
+              GHusername: user.login.username,
+              phone: user.cell
 
             
 
