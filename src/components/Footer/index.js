@@ -1,10 +1,11 @@
 import React from "react";
 import "./style.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Footer() {
   return (
     <footer className="footer">
-      <span> { new Date().getFullYear() }</span>
+      <span classname="content-align-center"> Made with love by WebmasterShane</span>
     </footer>
   );
 }

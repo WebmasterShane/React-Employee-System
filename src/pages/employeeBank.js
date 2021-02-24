@@ -6,6 +6,7 @@ import "../components/Navbar/style.css"
 import TableData from "../components/tableData"
 
 
+
 function Employees() {
   const [viewState, setViewState] = useState({
     nameF: "",
@@ -69,29 +70,30 @@ function Employees() {
     setAlpha(sortedemployees);
     filteredEmployees = Alpha
   }
-
   
 
   return (
     <EmployeeContext.Provider value={filteredEmployees}>
        <nav className="navbar navbar-expand-lg justify-content-center">
-       <input classname="justify-content-left col" id="search" onChange={handleSearchChange}/> 
+        
+       <input classname="justify-content-left col-3" id="search" placeholder="Search" onChange={handleSearchChange}/> 
        
-      <p className="navbar-brandd-flex justify-content-center font-weight-bold col">
+      <h2 className="font-weight-bold col text-center title">
         Employee Tracker
-      </p>
+      </h2>
+    
     </nav>
     
-    <div>
-    <div className="container">
+    <div classname="fullApp">
+    <div className="container fullApp">
       <table className="table table-striped table-dark table-hover">
         
 
        <tbody>
        <thead>
           <tr className="tableRow">
-          <td className="column"><button onClick={changetoSort}>Sort by name</button></td>
-            <td className="column text-left"><h3 >Name</h3></td>
+          <td className="column"></td>
+            <td className="column text-left"><h3 className="sortButton" onClick={changetoSort}>Name</h3></td>
             <td className="column text-left"><h3>Email</h3></td>
             <td className="column text-left"><h3>GitHub Username</h3></td>
             <td className="column text-left"><h3>Phone Number</h3></td>
