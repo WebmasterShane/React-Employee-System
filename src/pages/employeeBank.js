@@ -8,15 +8,6 @@ import TableData from "../components/tableData"
 
 
 function Employees() {
-  const [viewState, setViewState] = useState({
-    nameF: "",
-    nameL: "",
-    image: "",
-    email: "",
-    GHusername: "",
-    phone: "",
-     });
-  const [user, setUser] = useState();
   const [users, setUsers] = useState([]);
   let [filteredEmployees, setFilteredEmployees] = useState([])
   let [Alpha, setAlpha] = useState([])
@@ -30,15 +21,7 @@ function Employees() {
         API.getUsers().then(users => {
           console.log("secondTestTest")
           setUsers(users);
-          setUser(users[0]);
-          setFilteredEmployees(users);
-          setViewState({
-            name: users.nameF + users.nameL,
-            image: users.image,
-            email: users.email,
-            GHusername: users.GHusername,
-            phone: users.phone
-          });
+          setFilteredEmployees(users)
         })
         
       .catch(err => console.log(err));
