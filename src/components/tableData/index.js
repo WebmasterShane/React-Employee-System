@@ -9,20 +9,27 @@ function TableData() {
   const employees = useContext(EmployeeContext);
     console.log(employees)
 
-
-
+ 
+    
+   
+      // const changetoSort = function(employees){
+      //   const sortedemployees = employees.sort(function(a,b){
+     
+      //     if (a.nameL<b.nameL){
+      //       return -1
+      //     }
+      //     if (a.nameL>b.nameL){
+      //       return 1
+      //     }
+      //     return 0 
+      //   })
+      //   console.log(sortedemployees)
+      //   employees = sortedemployees
+        
+      // }
 
   return (
     <div className="employees">
-      <thead>
-          <tr className="tableRow">
-          <td className="column"></td>
-            <td className="column text-left"><h3>Name</h3></td>
-            <td className="column text-left"><h3>Email</h3></td>
-            <td className="column text-left"><h3>GitHub Username</h3></td>
-            <td className="column text-left"><h3>Phone Number</h3></td>
-          </tr>
-          </thead>
       {employees.map((employees, index) =>(
         
           <tr key={index} className="tableRow">

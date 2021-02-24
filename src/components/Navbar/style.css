@@ -7,3 +7,16 @@ p{
   font-size: x-large;
   text-shadow: 3px 3px 10px black;
 }
+nav{
+  background-color:darkblue
+}
+td{
+  border-radius: 2px;
+  border-color: black;
+}
+.tableRow{
+  width: 100%;
+}
+.column{
+  width: 20%;
+}

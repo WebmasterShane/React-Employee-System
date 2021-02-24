@@ -5,7 +5,8 @@ const EmployeeContext = React.createContext({
   image: "",
   email: "",
   GHusername: "",
-  phone: ""
+  phone: "",
+  onClick: () => undefined
 });
 
 export default EmployeeContext;

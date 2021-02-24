@@ -11,7 +11,8 @@ function Ulfunction() {
     <div className="container">
       <table className="table table-striped table-dark table-hover">
        <tbody>
-        <TableData/>
+        <TableData
+        />
         </tbody>
       </table>
     </div>
