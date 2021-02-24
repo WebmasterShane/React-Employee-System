@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import API from "../utils/API";
 import CardContainer from "../components/CardContainer/index";
-import Row from "../components/Row";
 import EmployeeContext from "../utils/EmployeeContext"
 
 function Employees() {
@@ -46,9 +45,6 @@ function Employees() {
   return (
     <EmployeeContext.Provider value={users}>
     <div>
-      <h1 className="text-center">Shanes Employee Tracker</h1>
-      <h3 className="text-center">Wait for more info</h3>
-  
         <CardContainer
         
        

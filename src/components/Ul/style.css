@@ -11,3 +11,6 @@
   width: 86px;
   height: 86px;
 }
+.thumbNailImageradius{
+  border-radius: 50%;
+}
