@@ -32,8 +32,8 @@ The app uses the following technologies:
 See images below for screenshots of the app, and [here](https://webmastershane.github.io/React-Employee-System/) is a link to use the app.
 
 # Images
- ### User sign up page
- <img src="https://github.com/WebmasterShane/React-Employee-System/blob/master/img/screenshowbasic.jpg" width="850" height="600">
+ ### Landing Page
+ <img src="https://github.com/WebmasterShane/React-Employee-System/blob/master/img/screenshowbasic.jpg" width="100%" height="rel">
+ ### Search Functioning
+ <img src="https://github.com/WebmasterShane/React-Employee-System/blob/master/img/screenshowsearch.jpg" width=100% height="rel">
  
-  ### Home Page
- <img src="https://github.com/916Serg619/Project2/blob/c4580ee5770d4ee21fab57fcbcd6776c8614803c/public/assets/Screen%20Shot%202021-01-27%20at%2010.23.14%20AM.png" width="850" height="700">
