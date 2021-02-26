@@ -34,8 +34,8 @@ See images below for screenshots of the app, and [here](https://webmastershane.g
 # Images
  ## Landing Page
  <img src="https://github.com/WebmasterShane/React-Employee-System/blob/master/img/screenshowbasic.jpg" width="100%" height="rel">
- ### Search Functioning
+ Search Functioning
  <img src="https://github.com/WebmasterShane/React-Employee-System/blob/master/img/screenshowsearch.jpg" width=100% height="rel">
- #### Sort Functioning
+ Sort Functioning
   <img src="https://github.com/WebmasterShane/React-Employee-System/blob/master/img/screenshowsort.jpg" width=100% height="rel">
  
