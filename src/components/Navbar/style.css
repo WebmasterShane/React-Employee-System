@@ -42,3 +42,6 @@ a{
 table{
   margin-top: 3%;
 }
+.thumbNailImage{
+  border-radius: 50%;
+}
