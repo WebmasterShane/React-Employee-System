@@ -32,10 +32,10 @@ The app uses the following technologies:
 See images below for screenshots of the app, and [here](https://webmastershane.github.io/React-Employee-System/) is a link to use the app.
 
 # Images
- ### Landing Page
+ ## Landing Page
  <img src="https://github.com/WebmasterShane/React-Employee-System/blob/master/img/screenshowbasic.jpg" width="100%" height="rel">
  ### Search Functioning
  <img src="https://github.com/WebmasterShane/React-Employee-System/blob/master/img/screenshowsearch.jpg" width=100% height="rel">
- ### Sort Functioning
+ #### Sort Functioning
   <img src="https://github.com/WebmasterShane/React-Employee-System/blob/master/img/screenshowsort.jpg" width=100% height="rel">
  
